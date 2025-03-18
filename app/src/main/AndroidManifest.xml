@@ -35,6 +35,8 @@
 
         <service android:name=".ui.screens.services.DownloadService" />
         <service android:name=".ui.screens.services.BoundDownloadService" />
+
+        <receiver android:name=".ui.screens.notifications.NotificationActionReceiver"/>
     </application>
 
 </manifest>

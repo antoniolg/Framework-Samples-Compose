@@ -46,7 +46,6 @@
     <string name="download_service_instructions">Este ejemplo demuestra un servicio que simula la descarga de un archivo. Puedes iniciar la descarga proporcionando una URL y detenerla en cualquier momento. El progreso de la descarga se muestra en el Logcat.</string>
     <string name="bound_download_service_instructions">Este ejemplo demuestra un servicio enlazado que simula la descarga de un archivo y muestra el progreso en tiempo real en la interfaz de usuario.</string>
 
-
     <!-- Coroutines Samples -->
     <string name="coroutines_title">Corrutinas en Android</string>
     <string name="coroutines_description">Ejemplo de uso de corrutinas para tareas en segundo plano</string>
@@ -66,4 +65,9 @@
     <string name="channel_basic_description">Canal para notificaciones básicas de ejemplo</string>
     <string name="notification_basic_instructions">Este ejemplo demuestra cómo crear y mostrar una notificación básica. En Android 13 y superior, se solicita el permiso POST_NOTIFICATIONS antes de mostrar la notificación.</string>
     <string name="notification_expandable_content">Este es un ejemplo de notificación expandible. Al expandir la notificación, podrás ver este texto más largo que explica con más detalle el contenido de la notificación. Las notificaciones expandibles son útiles cuando necesitas mostrar más información al usuario.</string>
+    <string name="notification_actions">Notificación con Acciones</string>
+    <string name="notification_actions_description">Ejemplo de una notificación con botones de acción</string>
+    <string name="notification_message_title">Nuevo Mensaje</string>
+    <string name="notification_message_content">Has recibido un nuevo mensaje</string>
+    <string name="notification_action_mark_as_read">Marcar como leído</string>
 </resources>
