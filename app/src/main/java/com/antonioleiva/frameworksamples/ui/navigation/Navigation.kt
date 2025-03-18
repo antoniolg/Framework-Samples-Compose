@@ -11,6 +11,7 @@ import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BatteryScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.broadcast.CustomBroadcastScreen
 
 @Composable
 fun Navigation() {
@@ -41,6 +42,12 @@ fun Navigation() {
 
         composable<BatteryScreen> {
             BatteryScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable<CustomBroadcastScreen> {
+            CustomBroadcastScreen(
                 onBack = { navController.popBackStack() }
             )
         }
