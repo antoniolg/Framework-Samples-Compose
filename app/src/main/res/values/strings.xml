@@ -55,4 +55,14 @@
     <string name="cpu_task_result">Suma: %d</string>
     <string name="io_task_result">Datos obtenidos correctamente</string>
     <string name="coroutines_instructions">Este ejemplo demuestra el uso de corrutinas en Android para realizar tareas en segundo plano. La tarea CPU realiza un cálculo intensivo, mientras que la tarea IO simula una operación de entrada/salida con un retraso de 2 segundos.</string>
+
+    <!-- Notifications -->
+    <string name="notification_basic">Notificación Básica</string>
+    <string name="notification_basic_description">Ejemplo de una notificación básica con título y contenido</string>
+    <string name="show_notification">Mostrar Notificación</string>
+    <string name="notification_basic_title">Notificación de ejemplo</string>
+    <string name="notification_basic_content">Esta es una notificación básica de ejemplo</string>
+    <string name="channel_basic_name">Notificaciones básicas</string>
+    <string name="channel_basic_description">Canal para notificaciones básicas de ejemplo</string>
+    <string name="notification_basic_instructions">Este ejemplo demuestra cómo crear y mostrar una notificación básica. En Android 13 y superior, se solicita el permiso POST_NOTIFICATIONS antes de mostrar la notificación.</string>
 </resources>

@@ -11,6 +11,7 @@ import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.coroutines.CoroutineSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.notifications.NotificationSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
 
 @Composable
@@ -29,6 +30,7 @@ fun Navigation() {
                         Topic.BROADCAST_RECEIVERS -> navController.navigate(BroadcastSamplesScreen)
                         Topic.SERVICES -> navController.navigate(ServiceSamplesScreen)
                         Topic.COROUTINES -> navController.navigate(CoroutineSamplesScreen)
+                        Topic.NOTIFICATIONS -> navController.navigate(NotificationSamplesScreen)
                         else -> navController.context.notImplementedToast()
                     }
                 }
@@ -38,6 +40,7 @@ fun Navigation() {
         broadcastNav(navController)
         serviceNav(navController)
         coroutineNav(navController)
+        notificationNav(navController)
     }
 }
 
