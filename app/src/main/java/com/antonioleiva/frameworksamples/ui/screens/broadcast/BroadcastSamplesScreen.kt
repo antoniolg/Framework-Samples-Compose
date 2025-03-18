@@ -11,12 +11,12 @@ val broadcastSamples = listOf(
     Sample(
         R.string.battery_sample_title,
         R.string.battery_sample_description,
-        TODO()
+        BatteryScreen
     ),
     Sample(
         R.string.custom_broadcast_sample_title,
         R.string.custom_broadcast_sample_description,
-        TODO()
+        BatteryScreen // TODO
     )
 )
 
