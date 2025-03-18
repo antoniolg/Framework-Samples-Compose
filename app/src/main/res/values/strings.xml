@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Framework Samples</string>
+
+    <!-- Topics -->
+    <string name="topic_broadcast_receivers">2.1 Broadcast receivers</string>
+    <string name="topic_services">2.2 Servicios</string>
+    <string name="topic_coroutines">2.3 Corrutinas</string>
+    <string name="topic_notifications">2.4 Notificaciones</string>
+    <string name="topic_persistence">2.5 Persistencia</string>
+    <string name="topic_work_manager">2.6 Work Manager</string>
+    <string name="topic_web_services">2.7 Web services</string>
+    <string name="topic_fragments">2.8 Fragments</string>
+    <string name="topic_location_maps">2.9 Location &amp; Maps</string>
+    <string name="topic_styles_themes">2.10 Estilos y temas</string>
+
+    <string name="not_implemented_yet">Aún no implementado</string>
 </resources>
