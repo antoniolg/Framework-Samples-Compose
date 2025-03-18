@@ -14,4 +14,7 @@
     <string name="topic_styles_themes">2.10 Estilos y temas</string>
 
     <string name="not_implemented_yet">Aún no implementado</string>
+
+    <!-- Broadcast Samples -->
+    <string name="language_changed">Idioma cambiado a: %s</string>
 </resources>
