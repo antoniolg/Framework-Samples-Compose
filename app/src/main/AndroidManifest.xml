@@ -29,7 +29,9 @@
                 <action android:name="android.intent.action.LOCALE_CHANGED" />
             </intent-filter>
         </receiver>
+
         <service android:name=".ui.screens.services.DownloadService" />
+        <service android:name=".ui.screens.services.BoundDownloadService" />
     </application>
 
 </manifest>
