@@ -3,6 +3,8 @@ package com.antonioleiva.frameworksamples.ui.navigation
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -33,24 +35,7 @@ fun Navigation() {
             )
         }
 
-        composable<BroadcastSamplesScreen> {
-            BroadcastSamplesScreen(
-                onSampleClick = { navController.navigate(it.destination) },
-                onBack = { navController.popBackStack() }
-            )
-        }
-
-        composable<BatteryScreen> {
-            BatteryScreen(
-                onBack = { navController.popBackStack() }
-            )
-        }
-
-        composable<CustomBroadcastScreen> {
-            CustomBroadcastScreen(
-                onBack = { navController.popBackStack() }
-            )
-        }
+        broadcastNav(navController)
     }
 }
 
