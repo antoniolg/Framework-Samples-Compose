@@ -45,4 +45,14 @@
     <string name="default_message">Mensaje por defecto</string>
     <string name="download_service_instructions">Este ejemplo demuestra un servicio que simula la descarga de un archivo. Puedes iniciar la descarga proporcionando una URL y detenerla en cualquier momento. El progreso de la descarga se muestra en el Logcat.</string>
     <string name="bound_download_service_instructions">Este ejemplo demuestra un servicio enlazado que simula la descarga de un archivo y muestra el progreso en tiempo real en la interfaz de usuario.</string>
+
+
+    <!-- Coroutines Samples -->
+    <string name="coroutines_title">Corrutinas en Android</string>
+    <string name="coroutines_description">Ejemplo de uso de corrutinas para tareas en segundo plano</string>
+    <string name="run_cpu_task">Ejecutar Tarea CPU</string>
+    <string name="run_io_task">Ejecutar Tarea IO</string>
+    <string name="cpu_task_result">Suma: %d</string>
+    <string name="io_task_result">Datos obtenidos correctamente</string>
+    <string name="coroutines_instructions">Este ejemplo demuestra el uso de corrutinas en Android para realizar tareas en segundo plano. La tarea CPU realiza un cálculo intensivo, mientras que la tarea IO simula una operación de entrada/salida con un retraso de 2 segundos.</string>
 </resources>
