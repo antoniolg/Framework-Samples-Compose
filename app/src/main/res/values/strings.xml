@@ -17,4 +17,8 @@
 
     <!-- Broadcast Samples -->
     <string name="language_changed">Idioma cambiado a: %s</string>
+    <string name="battery_sample_title">Monitor de Batería</string>
+    <string name="battery_sample_description">Ejemplo de Broadcast Receiver dinámico que monitoriza el nivel de batería</string>
+    <string name="custom_broadcast_sample_title">Broadcast Personalizado</string>
+    <string name="custom_broadcast_sample_description">Ejemplo de cómo enviar y recibir broadcasts personalizados</string>
 </resources>
