@@ -16,7 +16,7 @@ val serviceSamples = listOf(
     Sample(
         R.string.bound_download_service_title,
         R.string.bound_download_service_description,
-        DownloadServiceScreen // TODO: Create BoundDownloadServiceScreen
+        BoundDownloadServiceScreen
     )
 )
 
