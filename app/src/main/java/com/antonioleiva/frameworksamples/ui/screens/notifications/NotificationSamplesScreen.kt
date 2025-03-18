@@ -12,6 +12,11 @@ private val notificationSamples = listOf(
         titleRes = R.string.notification_basic,
         descriptionRes = R.string.notification_basic_description,
         destination = BasicNotificationScreen
+    ),
+    Sample(
+        titleRes = R.string.notification_actions,
+        descriptionRes = R.string.notification_actions_description,
+        destination = ActionsNotificationScreen
     )
 )
 
