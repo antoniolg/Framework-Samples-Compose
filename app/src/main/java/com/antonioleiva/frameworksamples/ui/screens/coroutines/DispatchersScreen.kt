@@ -19,6 +19,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.antonioleiva.frameworksamples.R
@@ -34,6 +35,7 @@ object DispatchersScreen
 
 @Composable
 fun DispatchersScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
     var cpuResult by remember { mutableStateOf("") }
     var ioResult by remember { mutableStateOf("") }
     var isCpuLoading by remember { mutableStateOf(false) }
@@ -56,12 +58,10 @@ fun DispatchersScreen(onBack: () -> Unit) {
                     isCpuLoading = true
                     cpuResult = ""
 
-                    scope.launch(Dispatchers.Default) {
+                    scope.launch {
                         val result = performCPUTask()
-                        withContext(Dispatchers.Main) {
-                            cpuResult = result
-                            isCpuLoading = false
-                        }
+                        cpuResult = context.getString(R.string.cpu_task_result, result)
+                        isCpuLoading = false
                     }
                 },
                 modifier = Modifier.fillMaxWidth()
@@ -100,12 +100,10 @@ fun DispatchersScreen(onBack: () -> Unit) {
                     isIoLoading = true
                     ioResult = ""
 
-                    scope.launch(Dispatchers.IO) {
-                        val result = performIOTask()
-                        withContext(Dispatchers.Main) {
-                            ioResult = result
-                            isIoLoading = false
-                        }
+                    scope.launch {
+                        performIOTask()
+                        ioResult = context.getString(R.string.io_task_result)
+                        isIoLoading = false
                     }
                 },
                 modifier = Modifier.fillMaxWidth()
@@ -144,15 +142,14 @@ fun DispatchersScreen(onBack: () -> Unit) {
     }
 }
 
-private fun performCPUTask(): String {
+private suspend fun performCPUTask(): Int = withContext(Dispatchers.Default) {
     var result = 0
     for (i in 1..1_000_000) {
         result += i
     }
-    return "CPU Task Result: $result"
+    result
 }
 
-private suspend fun performIOTask(): String {
+private suspend fun performIOTask() = withContext(Dispatchers.IO) {
     delay(2000)
-    return "IO Task Result: Completed after 2 seconds"
 } 
