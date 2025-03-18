@@ -21,4 +21,6 @@
     <string name="battery_sample_description">Ejemplo de Broadcast Receiver dinámico que monitoriza el nivel de batería</string>
     <string name="custom_broadcast_sample_title">Broadcast Personalizado</string>
     <string name="custom_broadcast_sample_description">Ejemplo de cómo enviar y recibir broadcasts personalizados</string>
+    <string name="battery_level">Nivel de batería: %.1f%%</string>
+    <string name="battery_sample_instructions">Este ejemplo demuestra cómo usar un Broadcast Receiver dinámico para monitorizar el nivel de batería en tiempo real. El receiver se registra cuando la pantalla se crea y se desregistra cuando se destruye, siguiendo el ciclo de vida de la UI.</string>
 </resources>

@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import com.antonioleiva.frameworksamples.R
 import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
+import com.antonioleiva.frameworksamples.ui.screens.broadcast.BatteryScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
 
 @Composable
@@ -34,6 +35,12 @@ fun Navigation() {
         composable<BroadcastSamplesScreen> {
             BroadcastSamplesScreen(
                 onSampleClick = { navController.navigate(it.destination) },
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable<BatteryScreen> {
+            BatteryScreen(
                 onBack = { navController.popBackStack() }
             )
         }
