@@ -14,6 +14,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.components.Screen
+import kotlinx.serialization.Serializable
+
+@Serializable
+object HomeScreen
 
 @Composable
 fun HomeScreen(
@@ -43,8 +47,8 @@ fun TopicItem(
         text = stringResource(topic.stringRes),
         style = MaterialTheme.typography.titleMedium,
         modifier = Modifier
+            .clickable(onClick = onClick)
             .padding(16.dp)
             .fillMaxWidth()
-            .clickable(onClick = onClick),
     )
 }

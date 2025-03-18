@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 @Composable
 fun Screen(
     title: String,
-    onNavigateBack: (() -> Unit)? = null,
+    onBack: (() -> Unit)? = null,
     content: @Composable (Modifier) -> Unit
 ) {
     Scaffold(
@@ -26,8 +26,8 @@ fun Screen(
             TopAppBar(
                 title = { Text(text = title) },
                 navigationIcon = {
-                    if (onNavigateBack != null) {
-                        IconButton(onClick = onNavigateBack) {
+                    if (onBack != null) {
+                        IconButton(onClick = onBack) {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Default.ArrowBack,
                                 contentDescription = "Navigate back"
