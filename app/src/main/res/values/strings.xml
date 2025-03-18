@@ -27,4 +27,22 @@
     <string name="send_broadcast">Enviar Broadcast</string>
     <string name="received_message">Mensaje recibido: %s</string>
     <string name="custom_broadcast_sample_instructions">Este ejemplo demuestra cómo enviar y recibir broadcasts personalizados de forma segura. El broadcast se envía con el package name de la aplicación y el receiver se registra con RECEIVER_NOT_EXPORTED para evitar que otras apps puedan interceptar los mensajes.</string>
+
+    <!-- Service Samples -->
+    <string name="download_service_title">Servicio de Descarga</string>
+    <string name="download_service_description">Ejemplo de un servicio que simula la descarga de un archivo</string>
+    <string name="bound_download_service_title">Servicio Enlazado de Descarga</string>
+    <string name="bound_download_service_description">Ejemplo de un servicio enlazado que muestra el progreso de descarga en tiempo real</string>
+    <string name="start_download">Iniciar Descarga</string>
+    <string name="stop_download">Detener Descarga</string>
+    <string name="url_hint">URL del archivo a descargar</string>
+    <string name="download_started">Descarga iniciada: %s</string>
+    <string name="download_stopped">Descarga detenida</string>
+    <string name="download_progress">Descargando %1$s: %2$d%%</string>
+    <string name="download_complete">Descarga completada: %s</string>
+    <string name="service_started_message">Servicio iniciado con mensaje: %s</string>
+    <string name="service_stopped">Servicio detenido</string>
+    <string name="default_message">Mensaje por defecto</string>
+    <string name="download_service_instructions">Este ejemplo demuestra un servicio que simula la descarga de un archivo. Puedes iniciar la descarga proporcionando una URL y detenerla en cualquier momento. El progreso de la descarga se muestra en el Logcat.</string>
+    <string name="bound_download_service_instructions">Este ejemplo demuestra un servicio enlazado que simula la descarga de un archivo y muestra el progreso en tiempo real en la interfaz de usuario.</string>
 </resources>
