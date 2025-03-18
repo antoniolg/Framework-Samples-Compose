@@ -90,6 +90,10 @@ private fun showNotification(context: Context) {
         .setSmallIcon(R.drawable.ic_notification)
         .setContentTitle(context.getString(R.string.notification_basic_title))
         .setContentText(context.getString(R.string.notification_basic_content))
+        .setStyle(
+            NotificationCompat.BigTextStyle()
+                .bigText(context.getString(R.string.notification_expandable_content))
+        )
         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
         .setAutoCancel(true)
 
