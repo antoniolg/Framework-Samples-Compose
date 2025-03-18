@@ -14,6 +14,7 @@ import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BatteryScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.broadcast.CustomBroadcastScreen
+import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
 
 @Composable
 fun Navigation() {
@@ -29,6 +30,7 @@ fun Navigation() {
                 onTopicClick = { topic ->
                     when (topic) {
                         Topic.BROADCAST_RECEIVERS -> navController.navigate(BroadcastSamplesScreen)
+                        Topic.SERVICES -> navController.navigate(ServiceSamplesScreen)
                         else -> navController.context.notImplementedToast()
                     }
                 }
@@ -36,6 +38,7 @@ fun Navigation() {
         }
 
         broadcastNav(navController)
+        serviceNav(navController)
     }
 }
 
