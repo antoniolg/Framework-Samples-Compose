@@ -10,13 +10,15 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.components.Screen
 
 @Composable
 fun HomeScreen(
-    topics: List<String>,
-    onTopicClick: (String) -> Unit
+    topics: List<Topic>,
+    onTopicClick: (Topic) -> Unit
 ) {
     Screen(title = "Framework Samples") { modifier ->
         LazyColumn(
@@ -34,11 +36,11 @@ fun HomeScreen(
 
 @Composable
 fun TopicItem(
-    topic: String,
+    topic: Topic,
     onClick: () -> Unit,
 ) {
     Text(
-        text = topic,
+        text = stringResource(topic.stringRes),
         style = MaterialTheme.typography.titleMedium,
         modifier = Modifier
             .padding(16.dp)
