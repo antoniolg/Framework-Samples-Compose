@@ -12,6 +12,11 @@ val persistenceSamples = listOf(
         titleRes = R.string.shared_preferences,
         descriptionRes = R.string.shared_preferences_description,
         destination = SharedPreferencesScreen
+    ),
+    Sample(
+        titleRes = R.string.data_store,
+        descriptionRes = R.string.data_store_description,
+        destination = DataStoreScreen
     )
 )
 

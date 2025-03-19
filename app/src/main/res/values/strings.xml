@@ -79,10 +79,19 @@
     <string name="notification_download_complete">Descarga completada</string>
 
     <!-- Persistence -->
-    <string name="shared_preferences">SharedPreferences</string>
-    <string name="shared_preferences_description">Ejemplo de uso de SharedPreferences para guardar datos simples</string>
-    <string name="text_hint">Escribe algo…</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="shared_preferences_description">Ejemplo de cómo guardar y recuperar datos usando SharedPreferences</string>
+    <string name="text_hint">Escribe un texto</string>
     <string name="save">Guardar</string>
     <string name="delete">Eliminar</string>
     <string name="shared_preferences_instructions">Este ejemplo demuestra cómo usar SharedPreferences para guardar y recuperar datos simples. El texto que escribas se guardará automáticamente y se recuperará cuando vuelvas a abrir la aplicación.</string>
+    <string name="data_store">DataStore</string>
+    <string name="data_store_description">Ejemplo de uso de DataStore Preferences para guardar datos simples de forma asíncrona</string>
+    <string name="data_store_instructions">Este ejemplo demuestra cómo usar DataStore Preferences para guardar y recuperar datos de forma asíncrona. DataStore es la nueva API recomendada por Google para persistencia de datos simples, que reemplaza a SharedPreferences.</string>
+
+    <!-- DataStore -->
+    <string name="dataStoreTitle">DataStore</string>
+    <string name="dataStoreDescription">Ejemplo de persistencia de datos usando DataStore</string>
+    <string name="dataStoreInstructions">Escribe un texto y verás cómo se guarda automáticamente usando DataStore</string>
+    <string name="dataStoreTextFieldLabel">Texto a guardar</string>
 </resources>
