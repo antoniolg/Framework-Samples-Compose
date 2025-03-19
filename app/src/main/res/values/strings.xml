@@ -77,4 +77,12 @@
     <string name="notification_download_title">Descargando archivo</string>
     <string name="notification_download_content">Progreso: %d%%</string>
     <string name="notification_download_complete">Descarga completada</string>
+
+    <!-- Persistence -->
+    <string name="shared_preferences">SharedPreferences</string>
+    <string name="shared_preferences_description">Ejemplo de uso de SharedPreferences para guardar datos simples</string>
+    <string name="text_hint">Escribe algo…</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="shared_preferences_instructions">Este ejemplo demuestra cómo usar SharedPreferences para guardar y recuperar datos simples. El texto que escribas se guardará automáticamente y se recuperará cuando vuelvas a abrir la aplicación.</string>
 </resources>
