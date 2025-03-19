@@ -1,16 +1,21 @@
 package com.antonioleiva.frameworksamples.model
 
 import com.antonioleiva.frameworksamples.R
+import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.coroutines.CoroutineSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.notifications.NotificationSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.persistence.PersistenceSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
 
-enum class Topic(val stringRes: Int) {
-    BROADCAST_RECEIVERS(R.string.topic_broadcast_receivers),
-    SERVICES(R.string.topic_services),
-    COROUTINES(R.string.topic_coroutines),
-    NOTIFICATIONS(R.string.topic_notifications),
-    PERSISTENCE(R.string.topic_persistence),
-    WORK_MANAGER(R.string.topic_work_manager),
-    WEB_SERVICES(R.string.topic_web_services),
-    FRAGMENTS(R.string.topic_fragments),
-    LOCATION_MAPS(R.string.topic_location_maps),
-    STYLES_THEMES(R.string.topic_styles_themes);
+enum class Topic(val stringRes: Int, val destination: Any) {
+    BROADCAST_RECEIVERS(R.string.topic_broadcast_receivers, BroadcastSamplesScreen),
+    SERVICES(R.string.topic_services, ServiceSamplesScreen),
+    COROUTINES(R.string.topic_coroutines, CoroutineSamplesScreen),
+    NOTIFICATIONS(R.string.topic_notifications, NotificationSamplesScreen),
+    PERSISTENCE(R.string.topic_persistence, PersistenceSamplesScreen),
+    WORK_MANAGER(R.string.topic_work_manager, Unit),
+    WEB_SERVICES(R.string.topic_web_services, Unit),
+    FRAGMENTS(R.string.topic_fragments, Unit),
+    LOCATION_MAPS(R.string.topic_location_maps, Unit),
+    STYLES_THEMES(R.string.topic_styles_themes, Unit);
 } 

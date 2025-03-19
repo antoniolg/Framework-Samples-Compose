@@ -9,10 +9,6 @@ import androidx.navigation.compose.rememberNavController
 import com.antonioleiva.frameworksamples.R
 import com.antonioleiva.frameworksamples.model.Topic
 import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
-import com.antonioleiva.frameworksamples.ui.screens.broadcast.BroadcastSamplesScreen
-import com.antonioleiva.frameworksamples.ui.screens.coroutines.CoroutineSamplesScreen
-import com.antonioleiva.frameworksamples.ui.screens.notifications.NotificationSamplesScreen
-import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
 
 @Composable
 fun Navigation() {
@@ -26,12 +22,9 @@ fun Navigation() {
             HomeScreen(
                 topics = Topic.entries,
                 onTopicClick = { topic ->
-                    when (topic) {
-                        Topic.BROADCAST_RECEIVERS -> navController.navigate(BroadcastSamplesScreen)
-                        Topic.SERVICES -> navController.navigate(ServiceSamplesScreen)
-                        Topic.COROUTINES -> navController.navigate(CoroutineSamplesScreen)
-                        Topic.NOTIFICATIONS -> navController.navigate(NotificationSamplesScreen)
-                        else -> navController.context.notImplementedToast()
+                    when (topic.destination) {
+                        Unit -> navController.context.notImplementedToast()
+                        else -> navController.navigate(topic.destination)
                     }
                 }
             )
@@ -41,6 +34,7 @@ fun Navigation() {
         serviceNav(navController)
         coroutineNav(navController)
         notificationNav(navController)
+        persistenceNav(navController)
     }
 }
 
