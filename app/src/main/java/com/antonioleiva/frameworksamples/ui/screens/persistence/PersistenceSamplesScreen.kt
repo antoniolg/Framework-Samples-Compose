@@ -17,6 +17,11 @@ val persistenceSamples = listOf(
         titleRes = R.string.data_store,
         descriptionRes = R.string.data_store_description,
         destination = DataStoreScreen
+    ),
+    Sample(
+        titleRes = R.string.room_todo,
+        descriptionRes = R.string.room_todo_description,
+        destination = TodoScreen
     )
 )
 

@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import com.antonioleiva.frameworksamples.ui.screens.persistence.DataStoreScreen
 import com.antonioleiva.frameworksamples.ui.screens.persistence.PersistenceSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.persistence.SharedPreferencesScreen
+import com.antonioleiva.frameworksamples.ui.screens.persistence.TodoScreen
 
 fun NavGraphBuilder.persistenceNav(navController: NavHostController) {
     composable<PersistenceSamplesScreen> {
@@ -23,6 +24,12 @@ fun NavGraphBuilder.persistenceNav(navController: NavHostController) {
 
     composable<DataStoreScreen> {
         DataStoreScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+    
+    composable<TodoScreen> {
+        TodoScreen(
             onBack = { navController.popBackStack() }
         )
     }
