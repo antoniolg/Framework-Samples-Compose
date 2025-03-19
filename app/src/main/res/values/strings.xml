@@ -102,4 +102,91 @@
     <string name="todo_empty">No hay tareas pendientes</string>
     <string name="edit_todo">Editar</string>
     <string name="delete_todo">Eliminar</string>
+
+    <!-- WorkManager Samples -->
+    <string name="work_manager_basic_sync">Sincronización Básica</string>
+    <string name="work_manager_basic_sync_description">Ejemplo de un trabajo único para sincronizar datos con un servidor</string>
+    <string name="work_manager_image_processing">Procesamiento de Imágenes</string>
+    <string name="work_manager_image_processing_description">Ejemplo de procesamiento de imágenes en segundo plano con paso de datos</string>
+    <string name="work_manager_periodic">Trabajo Periódico</string>
+    <string name="work_manager_periodic_description">Ejemplo de un trabajo que se ejecuta periódicamente para tareas de mantenimiento</string>
+    <string name="work_manager_chained">Trabajos Encadenados</string>
+    <string name="work_manager_chained_description">Ejemplo de trabajos encadenados en secuencia y en paralelo</string>
+    <string name="work_manager_advanced_constraints">Restricciones Avanzadas</string>
+    <string name="work_manager_advanced_constraints_description">Ejemplo de un trabajo con múltiples restricciones y políticas de reintento</string>
+    <string name="start_work">Iniciar Trabajo</string>
+    <string name="cancel_work">Cancelar Trabajo</string>
+    <string name="work_result">Resultado: %s</string>
+    <string name="work_not_started">No iniciado</string>
+    <string name="work_enqueued">En cola</string>
+    <string name="work_running">Ejecutando</string>
+    <string name="work_succeeded">Completado</string>
+    <string name="work_failed">Fallido</string>
+    <string name="work_blocked">Bloqueado</string>
+    <string name="work_cancelled">Cancelado</string>
+    <string name="last_run">Última ejecución: %s</string>
+    <string name="run_count">Número de ejecuciones: %d</string>
+    <string name="work_status_format" formatted="false">Trabajo %s: %s</string>
+
+    <!-- WorkManager - Notificaciones -->
+    <string name="sync_notification_title">Sincronización en progreso</string>
+    <string name="sync_notification_content">Sincronizando datos con el servidor…</string>
+    <string name="channel_sync_name">Sincronización</string>
+    <string name="channel_sync_description">Notificaciones de sincronización de datos</string>
+    <string name="chain_notification_title">Procesamiento en cadena</string>
+    <string name="chain_notification_content_a">Ejecutando primer paso del proceso…</string>
+    <string name="chain_notification_content_b">Ejecutando segundo paso del proceso…</string>
+    <string name="chain_notification_content_c">Ejecutando paso final del proceso…</string>
+    <string name="image_processing_notification_title">Procesando imagen</string>
+    <string name="image_processing_notification_content">Aplicando filtros a la imagen…</string>
+
+    <!-- WorkManager - Mensajes de los Workers -->
+    <string name="sync_success">Sincronización completada con éxito</string>
+    <string name="sync_failure">Error de sincronización</string>
+    <string name="sync_error">Error: %s</string>
+    <string name="sync_progress">Sincronizando datos…</string>
+    <string name="image_no_uri_error">No se proporcionó URI de imagen</string>
+    <string name="image_open_error">No se pudo abrir la imagen</string>
+    <string name="image_processing_progress">Procesando imagen…</string>
+    <string name="image_processing_completed">Procesamiento completado en 2 segundos</string>
+    <string name="image_processing_error">Error al procesar la imagen: %s</string>
+    <string name="constrained_progress">Ejecutando intento #%d…</string>
+    <string name="constrained_error">Error irrecuperable: %s</string>
+
+    <plurals name="constrained_success">
+        <item quantity="one">Trabajo completado con éxito después de %d intento</item>
+        <item quantity="other">Trabajo completado con éxito después de %d intentos</item>
+    </plurals>
+    <string name="worker_a_progress">Ejecutando Trabajador A…</string>
+    <string name="worker_a_data">Datos generados por Trabajador A: %s</string>
+    <string name="worker_a_success">Trabajador A completado con éxito</string>
+    <string name="worker_a_error">Error en Trabajador A: %s</string>
+    <string name="worker_b_progress">Ejecutando Trabajador B…</string>
+    <string name="worker_b_no_input">No hay datos de entrada</string>
+    <string name="worker_b_data">Datos procesados por Trabajador B: %s</string>
+    <string name="worker_b_success">Trabajador B completado con éxito</string>
+    <string name="worker_b_error">Error en Trabajador B: %s</string>
+    <string name="worker_c_progress">Ejecutando Trabajador C…</string>
+    <string name="worker_c_no_input">No hay datos de B</string>
+    <string name="worker_c_data">Resultado final generado por Trabajador C basado en: %s</string>
+    <string name="worker_c_success">Trabajador C completado con éxito</string>
+    <string name="worker_c_error">Error en Trabajador C: %s</string>
+    <string name="maintenance_task_cache">Limpieza de caché completada</string>
+    <string name="maintenance_task_index">Actualización de índice completada</string>
+    <string name="maintenance_task_integrity">Verificación de integridad completada</string>
+    <string name="maintenance_task_sync">Sincronización de datos completada</string>
+    <string name="maintenance_error">Error en tarea de mantenimiento: %s</string>
+
+    <!-- WorkManager - Constantes y valores de configuración -->
+    <string name="worker_id_a">A</string>
+    <string name="worker_id_b">B</string>
+    <string name="worker_id_c">C</string>
+    <string name="date_format_pattern">dd/MM/yyyy HH:mm:ss</string>
+
+    <!-- WorkManager - Instrucciones -->
+    <string name="basic_sync_instructions">Este ejemplo demuestra cómo crear y ejecutar un trabajo único con WorkManager para sincronizar datos con un servidor. El trabajo se ejecuta en segundo plano y muestra una notificación durante el proceso.</string>
+    <string name="image_processing_instructions">Este ejemplo demuestra cómo procesar una imagen en segundo plano usando WorkManager. Se pasan datos al worker y se muestra una notificación durante el procesamiento.</string>
+    <string name="periodic_work_instructions">Este ejemplo demuestra cómo programar un trabajo periódico que se ejecuta cada 15 minutos (mínimo) para realizar tareas de mantenimiento. El trabajo se ejecuta con restricciones de red y batería.</string>
+    <string name="chained_work_instructions">Este ejemplo demuestra cómo encadenar trabajos en secuencia y en paralelo. Los trabajos se ejecutan en orden y pasan datos entre ellos.</string>
+    <string name="advanced_constraints_instructions">Este ejemplo demuestra cómo configurar un trabajo con múltiples restricciones (red, batería, almacenamiento) y políticas de reintento personalizadas.</string>
 </resources>

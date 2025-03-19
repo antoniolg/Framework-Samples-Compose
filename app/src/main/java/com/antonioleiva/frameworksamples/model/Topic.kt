@@ -6,6 +6,7 @@ import com.antonioleiva.frameworksamples.ui.screens.coroutines.CoroutineSamplesS
 import com.antonioleiva.frameworksamples.ui.screens.notifications.NotificationSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.persistence.PersistenceSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.workmanager.WorkManagerSamplesScreen
 
 enum class Topic(val stringRes: Int, val destination: Any) {
     BROADCAST_RECEIVERS(R.string.topic_broadcast_receivers, BroadcastSamplesScreen),
@@ -13,7 +14,7 @@ enum class Topic(val stringRes: Int, val destination: Any) {
     COROUTINES(R.string.topic_coroutines, CoroutineSamplesScreen),
     NOTIFICATIONS(R.string.topic_notifications, NotificationSamplesScreen),
     PERSISTENCE(R.string.topic_persistence, PersistenceSamplesScreen),
-    WORK_MANAGER(R.string.topic_work_manager, Unit),
+    WORK_MANAGER(R.string.topic_work_manager, WorkManagerSamplesScreen),
     WEB_SERVICES(R.string.topic_web_services, Unit),
     FRAGMENTS(R.string.topic_fragments, Unit),
     LOCATION_MAPS(R.string.topic_location_maps, Unit),

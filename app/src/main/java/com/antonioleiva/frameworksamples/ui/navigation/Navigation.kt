@@ -35,6 +35,7 @@ fun Navigation() {
         coroutineNav(navController)
         notificationNav(navController)
         persistenceNav(navController)
+        workManagerNav(navController)
     }
 }
 
