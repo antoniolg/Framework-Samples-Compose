@@ -18,5 +18,6 @@ class NotificationActionReceiver : BroadcastReceiver() {
     companion object {
         const val ACTION_MARK_AS_READ = "com.antonioleiva.frameworksamples.ACTION_MARK_AS_READ"
         const val NOTIFICATION_WITH_ACTIONS_ID = 2
+        const val NOTIFICATION_WITH_PROGRESS_ID = 3
     }
 } 
