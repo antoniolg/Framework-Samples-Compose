@@ -70,4 +70,11 @@
     <string name="notification_message_title">Nuevo Mensaje</string>
     <string name="notification_message_content">Has recibido un nuevo mensaje</string>
     <string name="notification_action_mark_as_read">Marcar como leído</string>
+    <string name="channel_download_name">Descargas</string>
+    <string name="channel_download_description">Canal para notificaciones de descarga</string>
+    <string name="notification_progress">Notificación con Progreso</string>
+    <string name="notification_progress_description">Ejemplo de una notificación que muestra el progreso de una descarga</string>
+    <string name="notification_download_title">Descargando archivo</string>
+    <string name="notification_download_content">Progreso: %d%%</string>
+    <string name="notification_download_complete">Descarga completada</string>
 </resources>

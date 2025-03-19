@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
 
     <application
         android:name=".App"
@@ -33,10 +35,12 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".ui.screens.services.DownloadService" />
+        <service
+            android:name=".ui.screens.services.DownloadService"
+            android:foregroundServiceType="dataSync" />
         <service android:name=".ui.screens.services.BoundDownloadService" />
 
-        <receiver android:name=".ui.screens.notifications.NotificationActionReceiver"/>
+        <receiver android:name=".ui.screens.notifications.NotificationActionReceiver" />
     </application>
 
 </manifest>
