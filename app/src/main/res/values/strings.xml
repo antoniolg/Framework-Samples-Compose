@@ -88,10 +88,18 @@
     <string name="data_store">DataStore</string>
     <string name="data_store_description">Ejemplo de uso de DataStore Preferences para guardar datos simples de forma asíncrona</string>
     <string name="data_store_instructions">Este ejemplo demuestra cómo usar DataStore Preferences para guardar y recuperar datos de forma asíncrona. DataStore es la nueva API recomendada por Google para persistencia de datos simples, que reemplaza a SharedPreferences.</string>
-
-    <!-- DataStore -->
     <string name="dataStoreTitle">DataStore</string>
     <string name="dataStoreDescription">Ejemplo de persistencia de datos usando DataStore</string>
     <string name="dataStoreInstructions">Escribe un texto y verás cómo se guarda automáticamente usando DataStore</string>
     <string name="dataStoreTextFieldLabel">Texto a guardar</string>
+    <string name="room_todo">Room (ToDo App)</string>
+    <string name="room_todo_description">Ejemplo de una aplicación de tareas pendientes usando Room para persistencia</string>
+    <string name="room_todo_instructions">Ejemplo de una aplicación de tareas pendientes. Inicialmente con persistencia en memoria, luego migraremos a Room para almacenamiento persistente.</string>
+    <string name="add_todo">Añadir tarea</string>
+    <string name="update">Actualizar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="todo_hint">Escribe una tarea…</string>
+    <string name="todo_empty">No hay tareas pendientes</string>
+    <string name="edit_todo">Editar</string>
+    <string name="delete_todo">Eliminar</string>
 </resources>
