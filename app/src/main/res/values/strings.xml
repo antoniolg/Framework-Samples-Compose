@@ -94,7 +94,7 @@
     <string name="dataStoreTextFieldLabel">Texto a guardar</string>
     <string name="room_todo">Room (ToDo App)</string>
     <string name="room_todo_description">Ejemplo de una aplicación de tareas pendientes usando Room para persistencia</string>
-    <string name="room_todo_instructions">Ejemplo de una aplicación de tareas pendientes. Inicialmente con persistencia en memoria, luego migraremos a Room para almacenamiento persistente.</string>
+    <string name="room_todo_instructions">Aplicación de tareas pendientes con persistencia usando Room. Las tareas se guardan automáticamente en una base de datos SQLite a través de Room.</string>
     <string name="add_todo">Añadir tarea</string>
     <string name="update">Actualizar</string>
     <string name="cancel">Cancelar</string>
