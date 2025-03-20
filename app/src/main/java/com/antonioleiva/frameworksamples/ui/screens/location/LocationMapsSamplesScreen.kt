@@ -13,6 +13,9 @@ object LocationMapsSamplesScreen
 @Serializable
 object BasicLocationScreen
 
+@Serializable
+object MapScreen
+
 @Composable
 fun LocationMapsSamplesScreen(
     onSampleClick: (Sample) -> Unit,
@@ -26,6 +29,11 @@ fun LocationMapsSamplesScreen(
                     titleRes = R.string.location_basic_title,
                     descriptionRes = R.string.location_basic_description,
                     destination = BasicLocationScreen
+                ),
+                Sample(
+                    titleRes = R.string.map_title,
+                    descriptionRes = R.string.map_description,
+                    destination = MapScreen
                 )
                 // Add more location samples here
             )

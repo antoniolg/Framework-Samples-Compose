@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.antonioleiva.frameworksamples.ui.screens.location.BasicLocationScreen
 import com.antonioleiva.frameworksamples.ui.screens.location.LocationMapsSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.location.MapScreen
 
 fun NavGraphBuilder.locationNav(navController: NavHostController) {
     composable<LocationMapsSamplesScreen> {
@@ -16,6 +17,12 @@ fun NavGraphBuilder.locationNav(navController: NavHostController) {
     
     composable<BasicLocationScreen> {
         BasicLocationScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+    
+    composable<MapScreen> {
+        MapScreen(
             onBack = { navController.popBackStack() }
         )
     }
