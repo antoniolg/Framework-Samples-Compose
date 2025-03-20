@@ -206,4 +206,18 @@
     <string name="periodic_work_instructions">Este ejemplo demuestra cómo programar un trabajo periódico que se ejecuta cada 15 minutos (mínimo) para realizar tareas de mantenimiento. El trabajo se ejecuta con restricciones de red y batería.</string>
     <string name="chained_work_instructions">Este ejemplo demuestra cómo encadenar trabajos en secuencia y en paralelo. Los trabajos se ejecutan en orden y pasan datos entre ellos.</string>
     <string name="advanced_constraints_instructions">Este ejemplo demuestra cómo configurar un trabajo con múltiples restricciones (red, batería, almacenamiento) y políticas de reintento personalizadas.</string>
+    <string name="advanced_constraints_explanation">Este ejemplo demuestra cómo configurar restricciones avanzadas para trabajos con WorkManager, como requisitos de red, batería y políticas de reintento.</string>
+    <string name="work_constraints">Restricciones del Trabajo</string>
+    <string name="network_type_required">Tipo de red requerida:</string>
+    <string name="network_not_required">No requerida</string>
+    <string name="network_any_connection">Cualquier conexión</string>
+    <string name="network_wifi">WiFi (sin medición)</string>
+    <string name="battery_not_low">Requiere batería no baja</string>
+    <string name="device_charging">Requiere dispositivo cargando</string>
+    <string name="storage_not_low">Requiere almacenamiento no bajo</string>
+    <string name="retry_policy">Política de reintento:</string>
+    <string name="linear_backoff">Lineal (incremento constante)</string>
+    <string name="exponential_backoff">Exponencial (incremento creciente)</string>
+    <string name="attempts_count">Intentos: %d</string>
+    <integer name="initial_backoff_delay">10</integer>
 </resources>
