@@ -3,10 +3,12 @@ package com.antonioleiva.frameworksamples.ui.screens.location
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.location.Location
 import androidx.activity.result.ActivityResultLauncher
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -17,12 +19,13 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.CircleOptions
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolygonOptions
+import com.google.android.gms.maps.model.PolylineOptions
 import com.google.maps.android.compose.CameraPositionState
+import com.google.maps.android.compose.MapType
 import com.google.maps.android.compose.rememberCameraPositionState
-import kotlinx.coroutines.CoroutineScope
 
 @Composable
 fun rememberMapState(
@@ -42,17 +45,23 @@ class MapState(
     val cameraPositionState: CameraPositionState,
     private val onPermissionDenied: () -> Unit
 ) {
-    // Default location (Madrid)
-    private val defaultLocation = LatLng(40.416775, -3.703790)
     
     // Current location
     var currentLocation by mutableStateOf<LatLng?>(null)
     
     // Current camera zoom level
-    var zoomLevel by mutableStateOf(15f)
+    var zoomLevel by mutableFloatStateOf(15f)
     
     // Collection of markers on the map
-    val markers = mutableStateListOf<MarkerOptions>()
+    val markers = mutableStateListOf<LatLng>()
+    
+    // Map type
+    var mapType by mutableStateOf(MapType.NORMAL)
+    
+    // Shape properties
+    var polylines = mutableStateListOf<PolylineOptions>()
+    var polygons = mutableStateListOf<PolygonOptions>()
+    var circles = mutableStateListOf<CircleOptions>()
     
     // Marker counter for unique titles
     private var markerCount = 0
@@ -106,14 +115,7 @@ class MapState(
                 currentLocation = latLng
                 
                 // Move camera to current location
-                cameraPositionState.move(
-                    CameraUpdateFactory.newCameraPosition(
-                        CameraPosition.Builder()
-                            .target(latLng)
-                            .zoom(zoomLevel)
-                            .build()
-                    )
-                )
+                moveCamera(latLng)
             }
         }
     }
@@ -121,29 +123,32 @@ class MapState(
     // Add marker at specific location
     fun addMarker(latLng: LatLng) {
         markerCount++
-        val markerOptions = MarkerOptions()
-            .position(latLng)
-            .title(context.getString(com.antonioleiva.frameworksamples.R.string.map_marker_title, markerCount))
-            .snippet(
-                context.getString(
-                    com.antonioleiva.frameworksamples.R.string.map_marker_snippet,
-                    latLng.latitude,
-                    latLng.longitude
-                )
-            )
+        // Add the marker position to our list
+        markers.add(latLng)
+    }
+    
+    // Add a random marker near current view
+    fun addRandomMarker() {
+        // Get current camera position as center
+        val position = cameraPositionState.position.target
         
-        markers.add(markerOptions)
+        // Add some randomness to the position
+        val lat = position.latitude + (Math.random() - 0.5) * 0.01
+        val lng = position.longitude + (Math.random() - 0.5) * 0.01
+        val markerPosition = LatLng(lat, lng)
+        
+        // Add marker to the map
+        markerCount++
+        markers.add(markerPosition)
     }
     
-    // Clear all markers
-    fun clearMarkers() {
+    // Clear all markers and shapes
+    fun clearAll() {
         markers.clear()
+        polylines.clear()
+        polygons.clear()
+        circles.clear()
         markerCount = 0
-    }
-    
-    // Add marker at current location
-    fun addMarkerAtCurrentLocation() {
-        currentLocation?.let { addMarker(it) }
     }
     
     // Move camera to a specific location
@@ -157,16 +162,59 @@ class MapState(
             )
         )
     }
-    
-    // Move camera to current location or default if null
-    fun moveCameraToCurrentLocation() {
-        val location = currentLocation ?: defaultLocation
-        moveCamera(location)
+
+    // Change map type
+    fun changeMapType(type: MapType) {
+        mapType = type
     }
     
-    // Update zoom level
-    fun updateZoomLevel(zoom: Float) {
-        zoomLevel = zoom
+    // Draw a polyline using the current markers
+    fun drawPolyline(): Boolean {
+        if (markers.size < 2) {
+            return false
+        }
+        
+        val polylineOptions = PolylineOptions()
+            .addAll(markers)
+            .width(5f)
+            .color(Color.RED)
+            
+        polylines.add(polylineOptions)
+        return true
+    }
+    
+    // Draw a polygon using the current markers
+    fun drawPolygon(): Boolean {
+        if (markers.size < 3) {
+            return false
+        }
+        
+        val polygonOptions = PolygonOptions()
+            .addAll(markers)
+            .strokeColor(Color.BLUE)
+            .fillColor(Color.argb(70, 0, 0, 255))
+            
+        polygons.add(polygonOptions)
+        return true
+    }
+    
+    // Draw a circle around the last marker
+    fun drawCircle(): Boolean {
+        if (markers.isEmpty()) {
+            return false
+        }
+        
+        // Use the last marker as center
+        val center = markers.last()
+        
+        val circleOptions = CircleOptions()
+            .center(center)
+            .radius(500.0) // 500 meters
+            .strokeColor(Color.GREEN)
+            .fillColor(Color.argb(70, 0, 255, 0))
+            
+        circles.add(circleOptions)
+        return true
     }
 }
 

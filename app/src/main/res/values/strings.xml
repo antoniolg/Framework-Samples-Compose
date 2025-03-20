@@ -295,13 +295,25 @@
     <string name="location_updates_stopped">Actualizaciones de ubicación detenidas</string>
     
     <!-- Map Example -->
+    <string name="maps_api_key">DEMO_KEY</string>
     <string name="map_title">Mapa de Google</string>
     <string name="map_description">Ejemplo de integración de Google Maps con la ubicación actual</string>
     <string name="map_my_location">Mi ubicación</string>
     <string name="map_add_marker">Añadir marcador</string>
-    <string name="map_clear_markers">Limpiar marcadores</string>
+    <string name="map_clear_markers">Limpiar todo</string>
     <string name="map_marker_title">Marcador %d</string>
     <string name="map_marker_snippet">Posición: %1$.4f, %2$.4f</string>
     <string name="map_current_location">Ubicación actual</string>
     <string name="map_instructions">Este ejemplo muestra cómo integrar Google Maps y mostrar la ubicación actual. Puedes añadir marcadores haciendo clic en el mapa y limpiarlos con el botón correspondiente.</string>
+    <string name="map_draw_polyline">Dibujar polilínea</string>
+    <string name="map_draw_polygon">Dibujar polígono</string>
+    <string name="map_draw_circle">Dibujar círculo</string>
+    <string name="map_change_type">Cambiar tipo</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_satellite">Satélite</string>
+    <string name="map_type_terrain">Terreno</string>
+    <string name="map_type_hybrid">Híbrido</string>
+    <string name="map_error_polyline">Añade al menos 2 marcadores para dibujar una polilínea</string>
+    <string name="map_error_polygon">Añade al menos 3 marcadores para dibujar un polígono</string>
+    <string name="map_error_circle">Añade al menos 1 marcador para dibujar un círculo</string>
 </resources>
