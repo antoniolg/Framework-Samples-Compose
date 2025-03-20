@@ -36,6 +36,7 @@ fun Navigation() {
         notificationNav(navController)
         persistenceNav(navController)
         workManagerNav(navController)
+        webServicesNav(navController)
     }
 }
 
