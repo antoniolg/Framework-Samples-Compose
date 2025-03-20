@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.antonioleiva.frameworksamples.fragments.navigation.HomeFragment"
+        android:label="@string/navigation_home_title"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.antonioleiva.frameworksamples.fragments.navigation.ProfileFragment"
+        android:label="@string/navigation_profile_title"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.antonioleiva.frameworksamples.fragments.navigation.SettingsFragment"
+        android:label="@string/navigation_settings_title"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.antonioleiva.frameworksamples.fragments.navigation.DetailFragment"
+        android:label="@string/navigation_detail_title"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="itemId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation> 

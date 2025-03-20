@@ -29,7 +29,15 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".fragments.basic.BasicFragmentActivity" />
+        <activity
+            android:name=".fragments.basic.BasicFragmentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FrameworkSamples" />
+            
+        <activity
+            android:name=".fragments.navigation.NavigationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FrameworkSamples" />
             
         <receiver
             android:name=".ui.screens.broadcast.LocaleChangedReceiver"
