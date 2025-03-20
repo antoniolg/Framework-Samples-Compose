@@ -108,6 +108,8 @@
     <string name="work_manager_basic_sync_description">Ejemplo de un trabajo único para sincronizar datos con un servidor</string>
     <string name="work_manager_image_processing">Procesamiento de Imágenes</string>
     <string name="work_manager_image_processing_description">Ejemplo de procesamiento de imágenes en segundo plano con paso de datos</string>
+    <string name="select_image">Seleccionar Imagen</string>
+    <string name="process_image">Procesar Imagen</string>
     <string name="work_manager_periodic">Trabajo Periódico</string>
     <string name="work_manager_periodic_description">Ejemplo de un trabajo que se ejecuta periódicamente para tareas de mantenimiento</string>
     <string name="work_manager_chained">Trabajos Encadenados</string>
