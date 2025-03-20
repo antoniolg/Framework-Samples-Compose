@@ -100,7 +100,7 @@
     <string name="cancel">Cancelar</string>
     <string name="todo_hint">Escribe una tarea…</string>
     <string name="todo_empty">No hay tareas pendientes</string>
-    <string name="edit_todo">Editar</string>
+    <string name="edit">Editar</string>
     <string name="delete_todo">Eliminar</string>
 
     <!-- WorkManager Samples -->
@@ -227,6 +227,7 @@
     <string name="web_services_crud">Operaciones CRUD</string>
     <string name="web_services_crud_description">Ejemplo de operaciones Create, Read, Update y Delete con Retrofit</string>
     <string name="retrofit_basic_explanation">Este ejemplo demuestra cómo configurar Retrofit para realizar peticiones HTTP a una API REST y mostrar los resultados en una lista.</string>
+    <string name="retrofit_crud_explanation">Este ejemplo demuestra cómo realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) usando Retrofit para interactuar con una API REST.</string>
     <string name="users_list_title">Lista de Usuarios</string>
     <string name="user_id_label">ID: %d</string>
     <string name="user_username_label">Usuario: %s</string>
@@ -238,4 +239,12 @@
     <string name="retry">Reintentar</string>
     <string name="no_data">No hay datos disponibles</string>
     <string name="user_details">Detalles del usuario</string>
+    <string name="create">Crear</string>
+    <string name="title_hint">Título</string>
+    <string name="body_hint">Contenido</string>
+    <string name="confirm_delete_message">¿Estás seguro de que quieres eliminar \"%s\"?</string>
+    <string name="user_id_hint">ID de usuario</string>
+    <string name="operation_success">Operación completada con éxito</string>
+    <string name="operation_error">Error: %s</string>
+    <string name="user_id_format">ID de usuario: %d</string>
 </resources>

@@ -12,6 +12,11 @@ val webServicesSamples = listOf(
         R.string.web_services_basic_retrofit,
         R.string.web_services_basic_retrofit_description,
         BasicRetrofitScreen
+    ),
+    Sample(
+        R.string.web_services_crud,
+        R.string.web_services_crud_description,
+        CrudOperationsScreen
     )
 )
 
