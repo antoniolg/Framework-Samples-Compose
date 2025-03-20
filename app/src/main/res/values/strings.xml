@@ -220,4 +220,22 @@
     <string name="exponential_backoff">Exponencial (incremento creciente)</string>
     <string name="attempts_count">Intentos: %d</string>
     <integer name="initial_backoff_delay">10</integer>
+
+    <!-- Web Services -->
+    <string name="web_services_basic_retrofit">Retrofit Básico</string>
+    <string name="web_services_basic_retrofit_description">Ejemplo básico de uso de Retrofit para obtener datos de una API REST</string>
+    <string name="web_services_crud">Operaciones CRUD</string>
+    <string name="web_services_crud_description">Ejemplo de operaciones Create, Read, Update y Delete con Retrofit</string>
+    <string name="retrofit_basic_explanation">Este ejemplo demuestra cómo configurar Retrofit para realizar peticiones HTTP a una API REST y mostrar los resultados en una lista.</string>
+    <string name="users_list_title">Lista de Usuarios</string>
+    <string name="user_id_label">ID: %d</string>
+    <string name="user_username_label">Usuario: %s</string>
+    <string name="user_email_label">Email: %s</string>
+    <string name="user_phone_label">Teléfono: %s</string>
+    <string name="user_website_label">Sitio web: %s</string>
+    <string name="loading">Cargando datos…</string>
+    <string name="error_loading_data">Error al cargar los datos: %s</string>
+    <string name="retry">Reintentar</string>
+    <string name="no_data">No hay datos disponibles</string>
+    <string name="user_details">Detalles del usuario</string>
 </resources>
