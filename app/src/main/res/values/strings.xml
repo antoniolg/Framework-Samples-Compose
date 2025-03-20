@@ -15,6 +15,35 @@
 
     <string name="not_implemented_yet">Aún no implementado</string>
 
+    <!-- Fragments Samples -->
+    <string name="fragments_basic_title">Fragment Básico</string>
+    <string name="fragments_basic_description">Ejemplo básico de Fragment con ciclo de vida y argumentos</string>
+    <string name="fragments_navigation_title">Navigation Component</string>
+    <string name="fragments_navigation_description">Ejemplo de navegación entre Fragments usando Navigation Component</string>
+    
+    <!-- Basic Fragment -->
+    <string name="fragment_lifecycle_title">Ciclo de vida del Fragment</string>
+    <string name="fragment_argument_label">Argumento recibido: %s</string>
+    <string name="fragment_add">Añadir Fragment</string>
+    <string name="fragment_replace">Reemplazar Fragment</string>
+    <string name="fragment_remove">Eliminar Fragment</string>
+    <string name="fragment_add_to_backstack">Añadir al BackStack</string>
+    <string name="fragment_argument_hint">Introduce un argumento</string>
+    <string name="fragment_send_argument">Enviar argumento</string>
+    <string name="fragment_static_title">Fragment Estático</string>
+    <string name="fragment_dynamic_title">Fragment Dinámico</string>
+    
+    <!-- Navigation Fragment -->
+    <string name="navigation_home_title">Inicio</string>
+    <string name="navigation_profile_title">Perfil</string>
+    <string name="navigation_settings_title">Configuración</string>
+    <string name="navigation_detail_title">Detalle</string>
+    <string name="navigation_go_to_profile">Ir a Perfil</string>
+    <string name="navigation_go_to_settings">Ir a Configuración</string>
+    <string name="navigation_go_to_detail">Ir a Detalle</string>
+    <string name="navigation_go_back">Volver</string>
+    <string name="navigation_item_id">ID del elemento: %d</string>
+
     <!-- Broadcast Samples -->
     <string name="language_changed">Idioma cambiado a: %s</string>
     <string name="battery_sample_title">Monitor de Batería</string>
