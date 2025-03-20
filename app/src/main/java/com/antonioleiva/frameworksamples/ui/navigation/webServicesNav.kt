@@ -4,6 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.antonioleiva.frameworksamples.ui.screens.webservices.BasicRetrofitScreen
+import com.antonioleiva.frameworksamples.ui.screens.webservices.CrudOperationsScreen
 import com.antonioleiva.frameworksamples.ui.screens.webservices.WebServicesSamplesScreen
 
 fun NavGraphBuilder.webServicesNav(navController: NavHostController) {
@@ -16,6 +17,12 @@ fun NavGraphBuilder.webServicesNav(navController: NavHostController) {
     
     composable<BasicRetrofitScreen> {
         BasicRetrofitScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+    
+    composable<CrudOperationsScreen> {
+        CrudOperationsScreen(
             onBack = { navController.popBackStack() }
         )
     }
