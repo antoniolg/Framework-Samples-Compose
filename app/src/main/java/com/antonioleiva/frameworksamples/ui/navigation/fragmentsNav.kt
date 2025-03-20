@@ -5,6 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.antonioleiva.frameworksamples.fragments.basic.BasicFragmentActivity
+import com.antonioleiva.frameworksamples.fragments.navigation.NavigationActivity
 import com.antonioleiva.frameworksamples.ui.screens.fragments.BasicFragmentSample
 import com.antonioleiva.frameworksamples.ui.screens.fragments.FragmentsSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.fragments.NavigationFragmentSample
@@ -19,8 +20,8 @@ fun NavGraphBuilder.fragmentsNav(navController: NavHostController) {
                         navController.context.startActivity(intent)
                     }
                     NavigationFragmentSample -> {
-                        // Will be implemented in the second part
-                        navController.context.notImplementedToast()
+                        val intent = Intent(navController.context, NavigationActivity::class.java)
+                        navController.context.startActivity(intent)
                     }
                 }
             },
