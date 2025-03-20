@@ -22,6 +22,11 @@ val workManagerSamples = listOf(
         R.string.work_manager_periodic,
         R.string.work_manager_periodic_description,
         PeriodicWorkScreen
+    ),
+    Sample(
+        R.string.work_manager_chained,
+        R.string.work_manager_chained_description,
+        ChainedWorkScreen
     )
 )
 

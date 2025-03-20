@@ -9,5 +9,5 @@
 .externalNativeBuild
 .cxx
 local.properties
-.cursorrules
+/.cursor
 /memory-bank

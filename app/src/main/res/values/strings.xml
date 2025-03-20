@@ -129,6 +129,12 @@
     <string name="last_run">Última ejecución: %s</string>
     <string name="run_count">Número de ejecuciones: %d</string>
     <string name="work_status">Estado del trabajo</string>
+    <string name="work_status_format">%1$s: %2$s</string>
+    <string name="work_status_title">Estado de los Trabajos</string>
+    <string name="chain_type_title">Tipo de Encadenamiento</string>
+    <string name="sequential_chain">Secuencial (A → B → C)</string>
+    <string name="parallel_sequential_chain">Paralelo y Secuencial (A,B → C)</string>
+    <string name="start_chain_button">Iniciar Cadena de Trabajos</string>
     <string name="periodic_work_config_title">Configuración del Trabajo Periódico</string>
     <string name="interval_repeat_label">Intervalo de repetición:</string>
     <string name="interval_15min_label">15 minutos</string>
