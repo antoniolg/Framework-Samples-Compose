@@ -278,19 +278,30 @@
     <string name="user_id_format">ID de usuario: %d</string>
 
     <!-- Location & Maps -->
-    <string name="location_basic_title">Localización Básica</string>
-    <string name="location_basic_description">Ejemplo de cómo obtener la ubicación del dispositivo y recibir actualizaciones</string>
-    <string name="location_permission_denied">Permiso de ubicación denegado</string>
-    <string name="location_permission_rationale">Se necesita permiso de ubicación para mostrar tu ubicación actual</string>
+    <string name="location_basic_title">Ubicación Básica</string>
+    <string name="location_basic_description">Ejemplo básico de cómo obtener la ubicación del usuario</string>
     <string name="location_get_last">Obtener última ubicación</string>
     <string name="location_start_updates">Iniciar actualizaciones</string>
     <string name="location_stop_updates">Detener actualizaciones</string>
-    <string name="location_updates_started">Recibiendo actualizaciones de ubicación</string>
-    <string name="location_updates_stopped">Actualizaciones de ubicación detenidas</string>
-    <string name="location_updates">Actualizaciones de ubicación</string>
-    <string name="location_last_known">Última ubicación conocida</string>
-    <string name="location_no_last_known">No hay ubicación conocida</string>
+    <string name="location_no_last_known">No hay última ubicación conocida</string>
+    <string name="location_permission_denied">Permiso de ubicación denegado</string>
+    <string name="location_permission_rationale">Se necesita permiso de ubicación para obtener la ubicación actual</string>
     <string name="location_latitude">Latitud: %f</string>
     <string name="location_longitude">Longitud: %f</string>
-    <string name="location_accuracy">Precisión: %.1f metros</string>
+    <string name="location_accuracy">Precisión: %f metros</string>
+    <string name="location_updates">Actualizaciones de ubicación</string>
+    <string name="location_last_known">Última ubicación conocida</string>
+    <string name="location_updates_started">Actualizaciones de ubicación iniciadas</string>
+    <string name="location_updates_stopped">Actualizaciones de ubicación detenidas</string>
+    
+    <!-- Map Example -->
+    <string name="map_title">Mapa de Google</string>
+    <string name="map_description">Ejemplo de integración de Google Maps con la ubicación actual</string>
+    <string name="map_my_location">Mi ubicación</string>
+    <string name="map_add_marker">Añadir marcador</string>
+    <string name="map_clear_markers">Limpiar marcadores</string>
+    <string name="map_marker_title">Marcador %d</string>
+    <string name="map_marker_snippet">Posición: %1$.4f, %2$.4f</string>
+    <string name="map_current_location">Ubicación actual</string>
+    <string name="map_instructions">Este ejemplo muestra cómo integrar Google Maps y mostrar la ubicación actual. Puedes añadir marcadores haciendo clic en el mapa y limpiarlos con el botón correspondiente.</string>
 </resources>
