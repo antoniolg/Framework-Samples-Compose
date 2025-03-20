@@ -128,7 +128,16 @@
     <string name="work_cancelled">Cancelado</string>
     <string name="last_run">Última ejecución: %s</string>
     <string name="run_count">Número de ejecuciones: %d</string>
-    <string name="work_status_format" formatted="false">Trabajo %s: %s</string>
+    <string name="work_status">Estado del trabajo</string>
+    <string name="periodic_work_config_title">Configuración del Trabajo Periódico</string>
+    <string name="interval_repeat_label">Intervalo de repetición:</string>
+    <string name="interval_15min_label">15 minutos</string>
+    <string name="interval_30min_label">30 minutos</string>
+    <string name="interval_1hour_label">1 hora</string>
+    <string name="existing_work_policy_label">Política para trabajo existente:</string>
+    <string name="policy_keep">Mantener trabajo existente</string>
+    <string name="policy_replace">Reemplazar trabajo existente</string>
+    <string name="schedule_periodic_work">Programar Trabajo Periódico</string>
 
     <!-- WorkManager - Notificaciones -->
     <string name="sync_notification_title">Sincronización en progreso</string>
