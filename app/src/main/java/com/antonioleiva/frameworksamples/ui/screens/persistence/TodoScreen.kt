@@ -215,7 +215,7 @@ fun TodoItem(
         IconButton(onClick = onEditClick) {
             Icon(
                 imageVector = Icons.Default.Edit,
-                contentDescription = stringResource(R.string.edit_todo)
+                contentDescription = stringResource(R.string.edit)
             )
         }
         
