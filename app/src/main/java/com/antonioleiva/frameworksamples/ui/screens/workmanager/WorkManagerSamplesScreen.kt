@@ -12,6 +12,11 @@ val workManagerSamples = listOf(
         R.string.work_manager_basic_sync,
         R.string.work_manager_basic_sync_description,
         BasicSyncScreen
+    ),
+    Sample(
+        R.string.work_manager_image_processing,
+        R.string.work_manager_image_processing_description,
+        ImageProcessingScreen
     )
 )
 
