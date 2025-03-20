@@ -45,6 +45,7 @@ fun Navigation() {
         workManagerNav(navController)
         webServicesNav(navController)
         fragmentsNav(navController)
+        locationNav(navController)
     }
 }
 

@@ -276,4 +276,21 @@
     <string name="operation_success">Operación completada con éxito</string>
     <string name="operation_error">Error: %s</string>
     <string name="user_id_format">ID de usuario: %d</string>
+
+    <!-- Location & Maps -->
+    <string name="location_basic_title">Localización Básica</string>
+    <string name="location_basic_description">Ejemplo de cómo obtener la ubicación del dispositivo y recibir actualizaciones</string>
+    <string name="location_permission_denied">Permiso de ubicación denegado</string>
+    <string name="location_permission_rationale">Se necesita permiso de ubicación para mostrar tu ubicación actual</string>
+    <string name="location_get_last">Obtener última ubicación</string>
+    <string name="location_start_updates">Iniciar actualizaciones</string>
+    <string name="location_stop_updates">Detener actualizaciones</string>
+    <string name="location_updates_started">Recibiendo actualizaciones de ubicación</string>
+    <string name="location_updates_stopped">Actualizaciones de ubicación detenidas</string>
+    <string name="location_updates">Actualizaciones de ubicación</string>
+    <string name="location_last_known">Última ubicación conocida</string>
+    <string name="location_no_last_known">No hay ubicación conocida</string>
+    <string name="location_latitude">Latitud: %f</string>
+    <string name="location_longitude">Longitud: %f</string>
+    <string name="location_accuracy">Precisión: %.1f metros</string>
 </resources>
