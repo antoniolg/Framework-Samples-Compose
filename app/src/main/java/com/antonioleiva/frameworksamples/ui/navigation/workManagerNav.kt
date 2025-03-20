@@ -3,6 +3,7 @@ package com.antonioleiva.frameworksamples.ui.navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
+import com.antonioleiva.frameworksamples.ui.screens.workmanager.AdvancedConstraintsWorkScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.BasicSyncScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.ChainedWorkScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.ImageProcessingScreen
@@ -37,6 +38,12 @@ fun NavGraphBuilder.workManagerNav(navController: NavHostController) {
     
     composable<ChainedWorkScreen> {
         ChainedWorkScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+    
+    composable<AdvancedConstraintsWorkScreen> {
+        AdvancedConstraintsWorkScreen(
             onBack = { navController.popBackStack() }
         )
     }

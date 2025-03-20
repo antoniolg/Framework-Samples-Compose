@@ -27,6 +27,11 @@ val workManagerSamples = listOf(
         R.string.work_manager_chained,
         R.string.work_manager_chained_description,
         ChainedWorkScreen
+    ),
+    Sample(
+        R.string.work_manager_advanced_constraints,
+        R.string.work_manager_advanced_constraints_description,
+        AdvancedConstraintsWorkScreen
     )
 )
 
