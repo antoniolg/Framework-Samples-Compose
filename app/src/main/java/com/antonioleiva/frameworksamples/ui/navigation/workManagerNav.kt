@@ -4,6 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.BasicSyncScreen
+import com.antonioleiva.frameworksamples.ui.screens.workmanager.ChainedWorkScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.ImageProcessingScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.PeriodicWorkScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.WorkManagerSamplesScreen
@@ -30,6 +31,12 @@ fun NavGraphBuilder.workManagerNav(navController: NavHostController) {
     
     composable<PeriodicWorkScreen> {
         PeriodicWorkScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+    
+    composable<ChainedWorkScreen> {
+        ChainedWorkScreen(
             onBack = { navController.popBackStack() }
         )
     }
