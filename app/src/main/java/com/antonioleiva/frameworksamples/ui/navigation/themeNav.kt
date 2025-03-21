@@ -1,4 +1,4 @@
-package com.antonioleiva.frameworksamples.ui.navigation.theme
+package com.antonioleiva.frameworksamples.ui.navigation
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
@@ -8,6 +8,7 @@ import com.antonioleiva.frameworksamples.ui.screens.theme.ThemeSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.theme.ThemeSelectorScreen
 
 fun NavGraphBuilder.themeNav(navController: NavHostController) {
+
     composable<ThemeSamplesScreen> {
         ThemeSamplesScreen(
             onSampleClick = { navController.navigate(it.destination) },
