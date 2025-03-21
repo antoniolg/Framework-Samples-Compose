@@ -8,7 +8,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.antonioleiva.frameworksamples.R
 import com.antonioleiva.frameworksamples.model.Topic
-import com.antonioleiva.frameworksamples.ui.navigation.theme.themeNav
 import com.antonioleiva.frameworksamples.ui.screens.HomeScreen
 
 @Composable

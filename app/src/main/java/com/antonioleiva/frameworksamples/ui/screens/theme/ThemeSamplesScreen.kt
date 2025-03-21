@@ -7,16 +7,16 @@ import com.antonioleiva.frameworksamples.model.SamplesInfo
 import com.antonioleiva.frameworksamples.ui.components.SamplesScreen
 import kotlinx.serialization.Serializable
 
-val themeSamples = listOf(
+private val themeSamples = listOf(
     Sample(
         R.string.theme_selector_title,
         R.string.theme_selector_description,
         ThemeSelectorScreen
     ),
     Sample(
-        R.string.custom_typography_shapes_title,
-        R.string.custom_typography_shapes_description,
-        CustomTypographyShapesScreen
+        titleRes = R.string.theme_custom_typo_shapes_title,
+        descriptionRes = R.string.theme_custom_typo_shapes_desc,
+        destination = CustomTypographyShapesScreen
     )
 )
 
@@ -24,11 +24,14 @@ val themeSamples = listOf(
 object ThemeSamplesScreen
 
 @Composable
-fun ThemeSamplesScreen(onSampleClick: (Sample) -> Unit, onBack: () -> Unit) {
+fun ThemeSamplesScreen(
+    onSampleClick: (Sample) -> Unit,
+    onBack: () -> Unit
+) {
     SamplesScreen(
         samplesInfo = SamplesInfo(
-            R.string.topic_styles_themes,
-            themeSamples
+            title = R.string.topic_styles_themes,
+            samples = themeSamples
         ),
         onSampleClick = onSampleClick,
         onBack = onBack
