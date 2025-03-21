@@ -8,6 +8,7 @@ import com.antonioleiva.frameworksamples.ui.screens.location.LocationMapsSamples
 import com.antonioleiva.frameworksamples.ui.screens.notifications.NotificationSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.persistence.PersistenceSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.services.ServiceSamplesScreen
+import com.antonioleiva.frameworksamples.ui.screens.theme.ThemeSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.webservices.WebServicesSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.workmanager.WorkManagerSamplesScreen
 
@@ -21,5 +22,5 @@ enum class Topic(val stringRes: Int, val destination: Any) {
     WEB_SERVICES(R.string.topic_web_services, WebServicesSamplesScreen),
     FRAGMENTS(R.string.topic_fragments, FragmentsSamplesScreen),
     LOCATION_MAPS(R.string.topic_location_maps, LocationMapsSamplesScreen),
-    STYLES_THEMES(R.string.topic_styles_themes, Unit);
+    STYLES_THEMES(R.string.topic_styles_themes, ThemeSamplesScreen);
 } 
