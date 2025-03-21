@@ -316,4 +316,31 @@
     <string name="map_error_polyline">Añade al menos 2 marcadores para dibujar una polilínea</string>
     <string name="map_error_polygon">Añade al menos 3 marcadores para dibujar un polígono</string>
     <string name="map_error_circle">Añade al menos 1 marcador para dibujar un círculo</string>
+
+    <!-- Theme Samples -->
+    <string name="theme_examples_title">Temas en Jetpack Compose</string>
+    <string name="theme_examples_description">Ejemplos de cómo usar y personalizar temas en Jetpack Compose</string>
+    <string name="theme_selector_title">Selector de Temas</string>
+    <string name="theme_selector_description">Ejemplo de cómo implementar y cambiar entre diferentes temas en tu aplicación</string>
+    <string name="custom_typography_shapes_title">Tipografía y Formas Personalizadas</string>
+    <string name="custom_typography_shapes_description">Ejemplo de cómo personalizar la tipografía y las formas en el tema de tu aplicación</string>
+    <string name="select_theme">Selecciona un tema:</string>
+    <string name="theme_default">Tema Predeterminado (Púrpura)</string>
+    <string name="theme_blue">Tema Azul</string>
+    <string name="theme_dynamic">Tema Dinámico (Material You)</string>
+    <string name="theme_dynamic_note">Disponible solo en Android 12 o superior</string>
+    <string name="theme_preview">Vista previa del tema</string>
+    <string name="current_theme">Tema actual: %s</string>
+    <string name="theme_base_colors">Colores Base</string>
+    <string name="theme_background_colors">Colores de Fondo</string>
+    <string name="theme_text_colors">Colores de Texto</string>
+    <string name="primary">Primario</string>
+    <string name="secondary">Secundario</string>
+    <string name="tertiary">Terciario</string>
+    <string name="background">Fondo</string>
+    <string name="surface">Superficie</string>
+    <string name="surface_variant">Variante de Superficie</string>
+    <string name="on_primary">Sobre Primario</string>
+    <string name="on_background">Sobre Fondo</string>
+    <string name="on_surface">Sobre Superficie</string>
 </resources>
