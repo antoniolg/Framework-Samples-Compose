@@ -1,6 +1,7 @@
 package com.antonioleiva.frameworksamples.ui.screens.theme
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import android.content.res.Configuration.UI_MODE_TYPE_NORMAL
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -294,11 +295,11 @@ private fun ColorPreview(
     }
 }
 
-@Preview
-@Preview(uiMode = UI_MODE_NIGHT_YES)
+@Preview(name = "Light Theme")
+@Preview(uiMode = UI_MODE_NIGHT_YES or UI_MODE_TYPE_NORMAL, name = "Dark Theme",)
 @Composable
 private fun ThemeSelectorScreenPreview() {
-    FrameworkSamplesTheme {
+    FrameworkSamplesTheme(themeType = ThemeType.Blue) {
         Surface {
             ThemeSelectorScreen()
         }
