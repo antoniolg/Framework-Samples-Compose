@@ -316,7 +316,7 @@
     <string name="map_error_polyline">Añade al menos 2 marcadores para dibujar una polilínea</string>
     <string name="map_error_polygon">Añade al menos 3 marcadores para dibujar un polígono</string>
     <string name="map_error_circle">Añade al menos 1 marcador para dibujar un círculo</string>
-
+    
     <!-- Theme Samples -->
     <string name="theme_examples_title">Temas en Jetpack Compose</string>
     <string name="theme_examples_description">Ejemplos de cómo usar y personalizar temas en Jetpack Compose</string>
@@ -343,4 +343,12 @@
     <string name="on_primary">Sobre Primario</string>
     <string name="on_background">Sobre Fondo</string>
     <string name="on_surface">Sobre Superficie</string>
+    <string name="theme_custom_typo_shapes_name">Tema con tipografía y formas personalizadas</string>
+    <string name="theme_custom_typo_shapes_title">Tipografía y Formas Personalizadas</string>
+    <string name="theme_custom_typo_shapes_desc">Este ejemplo muestra cómo crear un tema con tipografía y formas personalizadas en Compose. La tipografía utiliza fuentes personalizadas para diferentes estilos de texto.</string>
+    <string name="theme_custom_typo_showcase">Ejemplos de Tipografía</string>
+    <string name="theme_typography_sample_text">La tipografía es el arte de componer y diseñar tipos para comunicar un mensaje.</string>
+    <string name="theme_custom_shapes_showcase">Ejemplos de Formas</string>
+    <string name="theme_shape_label">Forma</string>
+    <string name="theme_second_example_note">El segundo ejemplo (Tipografía y Formas Personalizadas) mostrará un tema completamente personalizado con fuentes y formas únicas, independientemente del tema seleccionado en esta pantalla.</string>
 </resources>
