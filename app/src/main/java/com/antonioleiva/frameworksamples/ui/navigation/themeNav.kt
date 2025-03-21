@@ -3,6 +3,7 @@ package com.antonioleiva.frameworksamples.ui.navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
+import com.antonioleiva.frameworksamples.ui.screens.theme.ComponentWrapperScreen
 import com.antonioleiva.frameworksamples.ui.screens.theme.CustomTypographyShapesScreen
 import com.antonioleiva.frameworksamples.ui.screens.theme.ThemeSamplesScreen
 import com.antonioleiva.frameworksamples.ui.screens.theme.ThemeSelectorScreen
@@ -24,6 +25,12 @@ fun NavGraphBuilder.themeNav(navController: NavHostController) {
 
     composable<CustomTypographyShapesScreen> {
         CustomTypographyShapesScreen(
+            onBack = { navController.popBackStack() }
+        )
+    }
+
+    composable<ComponentWrapperScreen> {
+        ComponentWrapperScreen(
             onBack = { navController.popBackStack() }
         )
     }
