@@ -9,14 +9,19 @@ import kotlinx.serialization.Serializable
 
 private val themeSamples = listOf(
     Sample(
-        R.string.theme_selector_title,
-        R.string.theme_selector_description,
-        ThemeSelectorScreen
+        titleRes = R.string.theme_selector_title,
+        descriptionRes = R.string.theme_selector_desc,
+        destination = ThemeSelectorScreen
     ),
     Sample(
         titleRes = R.string.theme_custom_typo_shapes_title,
         descriptionRes = R.string.theme_custom_typo_shapes_desc,
         destination = CustomTypographyShapesScreen
+    ),
+    Sample(
+        titleRes = R.string.theme_component_wrapper_title,
+        descriptionRes = R.string.theme_component_wrapper_desc,
+        destination = ComponentWrapperScreen
     )
 )
 

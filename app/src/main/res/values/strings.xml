@@ -320,29 +320,27 @@
     <!-- Theme Samples -->
     <string name="theme_examples_title">Temas en Jetpack Compose</string>
     <string name="theme_examples_description">Ejemplos de cómo usar y personalizar temas en Jetpack Compose</string>
-    <string name="theme_selector_title">Selector de Temas</string>
-    <string name="theme_selector_description">Ejemplo de cómo implementar y cambiar entre diferentes temas en tu aplicación</string>
-    <string name="custom_typography_shapes_title">Tipografía y Formas Personalizadas</string>
-    <string name="custom_typography_shapes_description">Ejemplo de cómo personalizar la tipografía y las formas en el tema de tu aplicación</string>
+    <string name="theme_selector_title">Selector de Tema</string>
+    <string name="theme_selector_desc">Este ejemplo te permite cambiar entre diferentes temas de la aplicación. Selecciona un tema para ver cómo cambia la apariencia de la app.</string>
     <string name="select_theme">Selecciona un tema:</string>
-    <string name="theme_default">Tema Predeterminado (Púrpura)</string>
-    <string name="theme_blue">Tema Azul</string>
-    <string name="theme_dynamic">Tema Dinámico (Material You)</string>
-    <string name="theme_dynamic_note">Disponible solo en Android 12 o superior</string>
+    <string name="theme_default">Tema predeterminado</string>
+    <string name="theme_blue">Tema azul</string>
+    <string name="theme_dynamic">Tema dinámico</string>
+    <string name="theme_dynamic_note">El tema dinámico solo está disponible en Android 12+. En versiones anteriores se usará el tema predeterminado.</string>
     <string name="theme_preview">Vista previa del tema</string>
     <string name="current_theme">Tema actual: %s</string>
-    <string name="theme_base_colors">Colores Base</string>
-    <string name="theme_background_colors">Colores de Fondo</string>
-    <string name="theme_text_colors">Colores de Texto</string>
+    <string name="theme_base_colors">Colores base</string>
     <string name="primary">Primario</string>
     <string name="secondary">Secundario</string>
     <string name="tertiary">Terciario</string>
+    <string name="theme_background_colors">Colores de fondo</string>
     <string name="background">Fondo</string>
     <string name="surface">Superficie</string>
-    <string name="surface_variant">Variante de Superficie</string>
-    <string name="on_primary">Sobre Primario</string>
-    <string name="on_background">Sobre Fondo</string>
-    <string name="on_surface">Sobre Superficie</string>
+    <string name="surface_variant">Superficie variante</string>
+    <string name="theme_text_colors">Colores de texto</string>
+    <string name="on_primary">Sobre primario</string>
+    <string name="on_background">Sobre fondo</string>
+    <string name="on_surface">Sobre superficie</string>
     <string name="theme_custom_typo_shapes_name">Tema con tipografía y formas personalizadas</string>
     <string name="theme_custom_typo_shapes_title">Tipografía y Formas Personalizadas</string>
     <string name="theme_custom_typo_shapes_desc">Este ejemplo muestra cómo crear un tema con tipografía y formas personalizadas en Compose. La tipografía utiliza fuentes personalizadas para diferentes estilos de texto.</string>
@@ -351,4 +349,19 @@
     <string name="theme_custom_shapes_showcase">Ejemplos de Formas</string>
     <string name="theme_shape_label">Forma</string>
     <string name="theme_second_example_note">El segundo ejemplo (Tipografía y Formas Personalizadas) mostrará un tema completamente personalizado con fuentes y formas únicas, independientemente del tema seleccionado en esta pantalla.</string>
+    
+    <!-- Component Wrapper Pattern -->
+    <string name="theme_component_wrapper_title">Patrón Wrapper para Componentes</string>
+    <string name="theme_component_wrapper_desc">Este ejemplo demuestra cómo crear wrappers para componentes como alternativa a los estilos de View. Este patrón permite mantener una apariencia consistente y reutilizable a través de toda la aplicación.</string>
+    <string name="theme_button_examples">Ejemplos de Botones</string>
+    <string name="theme_textfield_examples">Ejemplos de Campos de Texto</string>
+    <string name="theme_standard_components">Componentes Estándar:</string>
+    <string name="theme_wrapper_components">Componentes con Wrapper:</string>
+    <string name="theme_primary_button">Botón Primario</string>
+    <string name="theme_secondary_button">Botón Secundario</string>
+    <string name="theme_text_button">Botón de Texto</string>
+    <string name="theme_standard_textfield">Campo de texto estándar</string>
+    <string name="theme_standard_outlined_textfield">Campo con contorno estándar</string>
+    <string name="theme_custom_textfield">Campo de texto personalizado</string>
+    <string name="theme_custom_outlined_textfield">Campo con contorno personalizado</string>
 </resources>
