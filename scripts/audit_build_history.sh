@@ -43,21 +43,21 @@ VERSION_KEYS=(
   maps-compose
 )
 
-# Target versions resolved on 2026-03-02.
+# Target versions resolved on 2026-03-17.
 target_for_key() {
   case "$1" in
-    agp) echo "9.0.1" ;;
-    kotlin) echo "2.3.10" ;;
+    agp) echo "9.1.0" ;;
+    kotlin) echo "2.3.20" ;;
     ksp) echo "2.3.6" ;;
-    coreKtx) echo "1.17.0" ;;
+    coreKtx) echo "1.18.0" ;;
     junitVersion) echo "1.3.0" ;;
     espressoCore) echo "3.7.0" ;;
     lifecycleRuntimeKtx) echo "2.10.0" ;;
-    activityCompose) echo "1.12.4" ;;
-    composeBom) echo "2026.02.01" ;;
+    activityCompose) echo "1.13.0" ;;
+    composeBom) echo "2026.03.00" ;;
     navigation) echo "2.9.7" ;;
     kotlinx-serialization) echo "1.10.0" ;;
-    datastore) echo "1.2.0" ;;
+    datastore) echo "1.2.1" ;;
     room) echo "2.8.4" ;;
     workmanager) echo "2.11.1" ;;
     coil) echo "2.7.0" ;;
@@ -70,12 +70,12 @@ target_for_key() {
     fragment) echo "1.8.9" ;;
     play-services-location) echo "21.3.0" ;;
     play-services-maps) echo "20.0.0" ;;
-    maps-compose) echo "8.2.0" ;;
+    maps-compose) echo "8.2.1" ;;
     *) echo "" ;;
   esac
 }
 
-TARGET_WRAPPER="9.3.1"
+TARGET_WRAPPER="9.4.0"
 
 extract_toml_value() {
   local file_content="$1"
