@@ -70,7 +70,7 @@ target_for_key() {
     fragment) echo "1.8.9" ;;
     play-services-location) echo "21.3.0" ;;
     play-services-maps) echo "20.0.0" ;;
-    maps-compose) echo "8.2.1" ;;
+    maps-compose) echo "8.2.2" ;;
     *) echo "" ;;
   esac
 }

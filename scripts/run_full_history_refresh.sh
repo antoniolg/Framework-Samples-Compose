@@ -8,10 +8,9 @@ timestamp="$(date +%Y%m%d-%H%M%S)"
 latest_report="reports/latest-versions-${timestamp}.md"
 audit_report="reports/history-build-audit-${timestamp}.tsv"
 
-mkdir -p reports
-
-./scripts/latest_versions_report.sh | tee "$latest_report"
 ./scripts/rewrite_history_with_current_versions.sh
+mkdir -p reports
+./scripts/latest_versions_report.sh | tee "$latest_report"
 RUN_GRADLE_HELP=1 RUN_LINT=1 ./scripts/audit_build_history.sh "$audit_report"
 
 echo
