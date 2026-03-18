@@ -73,10 +73,6 @@ trap cleanup EXIT
   echo '#!/usr/bin/env bash'
   echo 'set -euo pipefail'
   echo
-  echo 'paths=()'
-  echo '[[ -f gradle/libs.versions.toml ]] && paths+=(gradle/libs.versions.toml)'
-  echo '[[ -f gradle/wrapper/gradle-wrapper.properties ]] && paths+=(gradle/wrapper/gradle-wrapper.properties)'
-  echo
   echo 'if [[ -f gradle/libs.versions.toml ]]; then'
 
   for key in "${VERSION_KEYS[@]}"; do
@@ -91,13 +87,8 @@ trap cleanup EXIT
   echo 'if [[ -f gradle/wrapper/gradle-wrapper.properties ]]; then'
   printf "  perl -0pi -e 's#distributionUrl=.*gradle-[0-9.]+-bin\\\\.zip#distributionUrl=https\\\\://services.gradle.org/distributions/gradle-%s-bin.zip#' gradle/wrapper/gradle-wrapper.properties\n" "$(get_wrapper_version)"
   echo 'fi'
-  echo
-  echo 'if (( ${#paths[@]} > 0 )) && ! git diff --quiet -- "${paths[@]}"; then'
-  echo '  git add "${paths[@]}"'
-  echo '  git commit --amend --no-edit --no-verify'
-  echo 'fi'
 } > "$TMP_HELPER"
 
 chmod +x "$TMP_HELPER"
 
-git rebase --root --empty=drop --exec "$TMP_HELPER"
+FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --tree-filter "$TMP_HELPER" -- HEAD
