@@ -1,3 +1,7 @@
+> [!WARNING]
+> **Archivado · Archived.** Este repositorio ya no se mantiene y puede no compilar con versiones actuales. This repository is no longer maintained and may not build with current versions.
+> Lo que enseño ahora · What I teach now: [devexpert.io](https://devexpert.io)
+
 # Framework Samples Compose
 
 A comprehensive Android sample project demonstrating various Android framework components using Jetpack Compose. This project serves as a learning resource and reference implementation for different Android framework features.
